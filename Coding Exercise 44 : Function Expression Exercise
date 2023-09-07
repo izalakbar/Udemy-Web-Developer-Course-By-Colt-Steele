@@ -1,0 +1,14 @@
+Function Expression Exercise
+Define a function that returns the square of a number. Define the function as a function expression, stored in a variable called square.  NOTE: Udemy's coding exercise platform does NOT support the ** operator. 
+
+square(4) //16
+square(3) //9
+
+//Answer
+const square = function(number) {
+  return number * number;
+};
+
+// Test the function
+console.log(square(4)); // Output: 16
+console.log(square(3)); // Output: 9
