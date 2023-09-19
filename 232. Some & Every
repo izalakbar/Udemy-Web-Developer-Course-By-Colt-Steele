@@ -1,0 +1,28 @@
+Contoh Every 
+
+const word = ['dog', 'dig', 'log', 'bag', 'wag'];
+
+word.every ( word => {
+  return word.length === 3
+}) //true
+
+word.every(word => word[0]==='d') //false
+
+word.every(word=> {
+  let lastLetter = word[word.length-1]
+  return lastLetter === 'g'
+})//true
+
+Contoh Some
+
+const word = ['dog','jello','log','cupcake','bag','wag'];
+
+word.some(word=>{
+  return word.length > 4
+  })//is there any element in array that contain word with 4 length == true
+
+word.some(word=> word[0] === z)//False because there is not any word that start with z
+
+word.some(word =>{
+  w.includes('cake')
+})//There is 'cake' in 'cupcake', so this is true
