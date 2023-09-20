@@ -6,7 +6,24 @@ allEvens([1,4,6,8]) //false
 allEvens([1,2,3]) //false
 
 Solution
-const allEvens=[1,2,3,4,5,6,7,8,9,10]
-allEvens.every(nums=>{
-  nums %2 ===0
-  })
+
+const allEvens = arr =>
+arr.every(num=> num%2===0);
+
+SOLUTION #1:
+
+function allEvens(arr) {
+  return arr.every(function (num) {
+    return num % 2 === 0;
+  });
+}
+SOLUTION #2:
+
+const allEvens = function (arr) {
+  return arr.every(num => num % 2 === 0);
+}
+SOLUTION #3:
+
+// Concise full arrow function syntax approach:
+const allEvens = arr => arr.every(num => num % 2 === 0);
+
